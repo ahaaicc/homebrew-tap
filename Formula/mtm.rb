@@ -9,16 +9,16 @@ class Mtm < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ahaaicc/mtm/releases/download/v0.2.6/mtm_0.2.6_darwin_amd64.tar.gz"
-      sha256 "4450256eb9ef36499e26459cbaedcf11b3d2ea0c98b36026a7d37100c2e790f8"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_darwin_amd64.tar.gz"
+      sha256 "c00626f08efc56e2dd6d55f2a8e24bfa9557fb4ca25402a74b01728d013f1fa5"
 
       define_method(:install) do
         bin.install "mtm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ahaaicc/mtm/releases/download/v0.2.6/mtm_0.2.6_darwin_arm64.tar.gz"
-      sha256 "bded203cee1ff59bedc4eaa33acf60b917e2a28a5d517b8845c5f688f818d959"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_darwin_arm64.tar.gz"
+      sha256 "0c4aeabdc229011fe1d3263c9b16549df4058c3322bf8d022bfc5ad6edbf6a01"
 
       define_method(:install) do
         bin.install "mtm"
@@ -28,15 +28,15 @@ class Mtm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ahaaicc/mtm/releases/download/v0.2.6/mtm_0.2.6_linux_amd64.tar.gz"
-      sha256 "bf4f51dc3bad611f5f0a4483440f0f52f2da0c8302e19969013269ec5cd222e2"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_linux_amd64.tar.gz"
+      sha256 "c142f3f7ae0a97c226c511b1b3301300c9d6dc1c4eb3a13a5a749f2b5cd7f7e5"
       define_method(:install) do
         bin.install "mtm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ahaaicc/mtm/releases/download/v0.2.6/mtm_0.2.6_linux_arm64.tar.gz"
-      sha256 "350a5476ce1a4178a7918fced4f6ace34fc7ab21e881febad73dbcd89ed13169"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_linux_arm64.tar.gz"
+      sha256 "6977a9bafd31b9843571e8c75296ed27480fa0a06c1740ce386234e192eb48af"
       define_method(:install) do
         bin.install "mtm"
       end
