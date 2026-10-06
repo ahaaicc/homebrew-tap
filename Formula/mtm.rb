@@ -5,20 +5,20 @@
 class Mtm < Formula
   desc "Terminal dashboard for parallel AI agent tasks (Claude Code, Codex, Droid)"
   homepage "https://github.com/ahaaicc/mtm"
-  version "0.2.6"
+  version "0.2.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_darwin_amd64.tar.gz"
-      sha256 "c00626f08efc56e2dd6d55f2a8e24bfa9557fb4ca25402a74b01728d013f1fa5"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.7/mtm_0.2.7_darwin_amd64.tar.gz"
+      sha256 "ac6f37a6d3bd5400fbe7d3f55a9d533ceadf68b637c43ed79d14b792cc7c2d2a"
 
       define_method(:install) do
         bin.install "mtm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_darwin_arm64.tar.gz"
-      sha256 "0c4aeabdc229011fe1d3263c9b16549df4058c3322bf8d022bfc5ad6edbf6a01"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.7/mtm_0.2.7_darwin_arm64.tar.gz"
+      sha256 "71b9fc28d858f2f7627fcf2d28d4ce23d4d1ac73d9000980e0b9e9c09066db77"
 
       define_method(:install) do
         bin.install "mtm"
@@ -28,15 +28,15 @@ class Mtm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_linux_amd64.tar.gz"
-      sha256 "c142f3f7ae0a97c226c511b1b3301300c9d6dc1c4eb3a13a5a749f2b5cd7f7e5"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.7/mtm_0.2.7_linux_amd64.tar.gz"
+      sha256 "ff3bfc3a2734629eab58454d895056eb6636ff09ea2396b16ef6c2ec3e4bfc1d"
       define_method(:install) do
         bin.install "mtm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.6/mtm_0.2.6_linux_arm64.tar.gz"
-      sha256 "6977a9bafd31b9843571e8c75296ed27480fa0a06c1740ce386234e192eb48af"
+      url "https://github.com/ahaaicc/mtm-releases/releases/download/v0.2.7/mtm_0.2.7_linux_arm64.tar.gz"
+      sha256 "56427bca6d54851ff92decae9b284fda73cde934142513e092d0bd97bb57ed52"
       define_method(:install) do
         bin.install "mtm"
       end
