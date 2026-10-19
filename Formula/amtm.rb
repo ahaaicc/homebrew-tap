@@ -5,20 +5,20 @@
 class Amtm < Formula
   desc "AMTM (Agents Multi-Task Management): terminal dashboard for parallel AI agent tasks (Claude Code, Codex, Droid)"
   homepage "https://github.com/ahaaicc/amtm"
-  version "0.4.3"
+  version "0.4.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.3/amtm_0.4.3_darwin_amd64.tar.gz"
-      sha256 "e2ce7e7be13ccfebe276fa3948011900e596d76caa5f3093d4096b5a60d78802"
+      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.4/amtm_0.4.4_darwin_amd64.tar.gz"
+      sha256 "9821a1119ba6a87846cfab4093bc9c890db6efaabf92b1b429ba0ab9da32b912"
 
       define_method(:install) do
         bin.install "amtm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.3/amtm_0.4.3_darwin_arm64.tar.gz"
-      sha256 "1a479e053c7881565cb5f48b5f7f1c459a3c7e2eb7e2886f3ec8911388812f13"
+      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.4/amtm_0.4.4_darwin_arm64.tar.gz"
+      sha256 "c7d4a48d56fced04043078edde9c7697194088f37f1af90e28ab4c036c91798b"
 
       define_method(:install) do
         bin.install "amtm"
@@ -28,15 +28,15 @@ class Amtm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.3/amtm_0.4.3_linux_amd64.tar.gz"
-      sha256 "1e908a36bc4131a731226eb7ea0f693b0a40a4cce24c5abb7c3f61175930cee3"
+      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.4/amtm_0.4.4_linux_amd64.tar.gz"
+      sha256 "10cc568bf2124476a7d0a60c36a0e18c49372e701853c3717bf3aa9ab6e0379d"
       define_method(:install) do
         bin.install "amtm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.3/amtm_0.4.3_linux_arm64.tar.gz"
-      sha256 "bfa4d30b997e35888fe644d8ae6906751e1648deacb7d65793694d16ee0d7bd8"
+      url "https://github.com/ahaaicc/amtm-releases/releases/download/v0.4.4/amtm_0.4.4_linux_arm64.tar.gz"
+      sha256 "6c616f3bc5de5b99f8ce8df96d31730b07e27f3408a8adfc8f0f174962b9c92c"
       define_method(:install) do
         bin.install "amtm"
       end
